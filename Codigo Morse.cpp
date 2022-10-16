@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string.h>
+#include <stdlib.h>
 std::string teste(){
-    
      std::string morse[26] = {
         ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---",
         "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-",
@@ -19,6 +19,7 @@ std::string teste(){
 }
 
 void inicio(){
+    system("CLS");
     std::cout << teste() << std::endl;
     std::string escolha;
     while( !(escolha == "S" || escolha == "N")){ // Se a resposta não for nem sim e nem não pergunta denovo
